@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Starting With CSS</title>
+    <style>
+      .container {
+        background-color: darkgoldenrod;
+      }
+    </style>
+
+    <link rel="stylesheet" href="./23Sept23.css" />
+  </head>
+
+  <body>
+    <!-- Q1 -->
+    <!-- <div class="container">
+      <div class="Box" id="Box1"></div>
+      <div class="Box" id="Box2"></div>
+      <div class="Box" id="Box3"></div>
+      <div class="Box" id="Box4"></div>
+    </div> -->
+
+    <!-- First preference is given to inline css. To decide priority of internal and 
+    external we need to focus on whether <link> tag is above or below the <style> tag. 
+    Here, link tag is below style tag, that means external css will take priority over 
+    internal css. -->
+
+    <!-- /Q2 -->
+    <!-- <div class="container">
+      <header class="header">
+        <p class="header__logo">logo</p>
+        <p class="header__menubar">menubar</p>
+        <p class="header__gallery">gallery
+          <img src="" alt="" class="header__image1">
+          <img src="" alt="" class="header__image2">
+        </p>
+      </header>
+
+      <div class="maincontent">
+        <button class="btn">Register</button>
+        <button class="btn btn--secondary">Login</button>
+      </div>
+    </div> -->
+
+    <!-- Q3 -->
+    <h1>Form</h1>
+    <form>
+      <div class="form__label">
+        <label for="">Username:</label>
+        <input type="text">
+      </div>
+
+      <div class="form__label">
+        <label for="">Password:</label>
+        <input type="password">
+      </div>
+
+      <div class="form__label">
+        <label for="">Gender:</label>
+        
+        <input type="radio" id="Male" name="Gender">
+        <label for="Male">Male</label>
+        
+        <input type="radio" id="Female" name="Gender">
+        <label for="Female">Female</label>
+      </div>
+
+     
+
+      <div>
+        <button class="form__btn">Register</button>
+      </div>
+    </form>
+  </body>
+</html>
